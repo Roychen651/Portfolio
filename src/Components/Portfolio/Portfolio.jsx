@@ -74,7 +74,6 @@ const items = [
     github: "https://github.com/Roychen651/moveEase",
   },
 ];
-
 const Single = ({ item }) => {
   const ref = useRef();
 
@@ -94,9 +93,12 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button onClick={() => window.open(item.github, "_blank")}>
+            <motion.button
+              onClick={() => window.open(item.github, "_blank")}
+              whileHover={{ scale: 1.05, backgroundColor: "#ffcc66" }}
+            >
               See Demo
-            </button>
+            </motion.button>
           </motion.div>
         </div>
       </div>

@@ -57,17 +57,23 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>ROY CHEN</motion.h2>
           <motion.h1 variants={textVariants}>Web And Apps Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <button
+            <motion.button
               onClick={() =>
                 window.open(
                   "https://drive.google.com/drive/u/0/folders/18xQbezonFvNcJHUgTBys9o6wEQnNFsPP",
                   "_blank"
                 )
               }
+              whileHover={{ scale: 1.05, backgroundColor: "rebeccapurple" }}
             >
               Resume
-            </button>
-            <button onClick={scrollToContact}>Contact Me</button>
+            </motion.button>
+            <motion.button
+              onClick={scrollToContact}
+              whileHover={{ scale: 1.05, backgroundColor: "rebeccapurple" }}
+            >
+              Contact Me
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -88,7 +94,6 @@ const Hero = () => {
       <div className="imageContainer">
         <img src="/hero.png" alt="Hero Image" />
       </div>
-      <div ref={contactRef} id="Contact"></div>
     </div>
   );
 };

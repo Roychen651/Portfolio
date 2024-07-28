@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="navbar">
-      
-      <Sidebar/>
+      <Sidebar />
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
@@ -16,18 +15,30 @@ const Navbar = () => {
           Roy Chen
         </motion.span>
         <div className="social">
-          <a href="https://www.facebook.com/roy.chen97/">
+          <motion.a
+            href="https://www.facebook.com/roy.chen97/"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src="/facebook.png" alt="" />
-          </a>
-          <a href="https://www.linkedin.com/in/roychen651/">
+          </motion.a>
+          <motion.a
+            href="https://www.linkedin.com/in/roychen651/"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src="/linkedin-icon.png" alt="" />
-          </a>
-          <a href="https://www.instagram.com/roychen.97">
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/roychen.97"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src="/instagram.png" alt="" />
-          </a>
-          <a href="https://github.com/Roychen651">
+          </motion.a>
+          <motion.a
+            href="https://github.com/Roychen651"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src="/github.png" alt="" />
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

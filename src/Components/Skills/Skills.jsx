@@ -51,7 +51,12 @@ const Skills = () => {
           <h1>
             <motion.b whileHover={{ color: "orange" }}>For My</motion.b> Projects.
           </h1>
-          <button onClick={handleProjectsClick}>Projects</button>
+          <motion.button
+            onClick={handleProjectsClick}
+            whileHover={{ scale: 1.05, backgroundColor: "#ffcc66" }}
+          >
+            Projects
+          </motion.button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
