@@ -1,5 +1,6 @@
 import "./Hero.scss";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const textVariants = {
   initial: {
@@ -23,7 +24,6 @@ const textVariants = {
     },
   },
 };
-
 const sliderVariants = {
   initial: {
     x: 0,
@@ -39,11 +39,9 @@ const sliderVariants = {
 };
 
 const Hero = () => {
-  const handleResumeClick = () => {
-    window.open("https://drive.google.com/drive/u/0/folders/1b6qh4Z1VtPw5i-hpNvI8PhRyn8pjNdJR", "_blank");
-  };
+  const contactRef = useRef(null);
 
-  const handleContactClick = () => {
+  const scrollToContact = () => {
     document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
   };
 
@@ -56,17 +54,20 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>Roy Chen</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web & Apps Developer    
-          </motion.h1>
+          <motion.h2 variants={textVariants}>ROY CHEN</motion.h2>
+          <motion.h1 variants={textVariants}>Web And Apps Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants} onClick={handleResumeClick}>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/drive/u/0/folders/18xQbezonFvNcJHUgTBys9o6wEQnNFsPP",
+                  "_blank"
+                )
+              }
+            >
               Resume
-            </motion.button>
-            <motion.button variants={textVariants} onClick={handleContactClick}>
-              Contact Me
-            </motion.button>
+            </button>
+            <button onClick={scrollToContact}>Contact Me</button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -82,11 +83,12 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Roy Chen Web Developer
+        Apps Website Developer Designer
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/hero.png" alt="Hero Image" />
       </div>
+      <div ref={contactRef} id="Contact"></div>
     </div>
   );
 };

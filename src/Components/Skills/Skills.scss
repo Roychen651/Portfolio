@@ -1,47 +1,50 @@
 @import "../../app.scss";
 
-.skills {
+.services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #ffffff;
-  padding: 20px;
-  padding-bottom: 20px;
 
-  .text-container {
+  .textContainer {
     flex: 1;
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 20px;
-    text-align: right;
 
     @include mobile {
       align-self: center;
       text-align: center;
       flex-direction: column;
+      padding: 10px;
     }
 
     p {
       font-weight: 200;
       font-size: 20px;
       color: gray;
+      text-align: right;
+
+      @include mobile {
+        font-size: 16px;
+        text-align: center;
+      }
     }
 
     hr {
-      width: 250px;
+      width: 500px;
       border: none;
       border-top: 0.5px solid gray;
 
       @include mobile {
-        width: 150px;
+        width: 200px;
       }
     }
   }
 
-  .title-container {
+  .titleContainer {
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -59,19 +62,18 @@
       @include mobile {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 10px;
       }
 
       img {
         width: 300px;
-        height: 150px;
+        height: 100px;
         border-radius: 50px;
         object-fit: cover;
-        transform: translateY(20px);
 
         @include mobile {
-          width: 150px;
-          height: 75px;
+          width: 100px;
+          height: 50px;
         }
       }
 
@@ -80,7 +82,7 @@
         font-weight: 100;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 24px;
         }
       }
 
@@ -94,27 +96,26 @@
         cursor: pointer;
 
         @include mobile {
-          font-size: 16px;
-          width: 150px;
-          height: 50px;
+          font-size: 14px;
+          width: 100px;
+          height: 40px;
         }
       }
     }
   }
 
-  .list-container {
+  .listContainer {
     flex: 2;
     display: flex;
     max-width: 1366px;
     margin: auto;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 
     @include mobile {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px;
     }
 
     .box {
@@ -123,15 +124,16 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 48%;
+      width: 45%;
       background-color: #222;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      margin-bottom: 20px;
+      margin: 10px;
 
       @include mobile {
-        width: 45%;
+        width: 100%;
         padding: 10px;
+        margin: 10px 0;
       }
 
       h2 {
@@ -139,26 +141,16 @@
         margin-bottom: 10px;
 
         @include mobile {
-          font-size: 1.2em;
+          font-size: 18px;
         }
       }
 
-      .skills-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+      p {
+        font-size: 16px;
 
-        .skill-item {
-          background-color: #333;
-          padding: 10px 15px;
-          color: white;
-          border-radius: 5px;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-
-          @include mobile {
-            padding: 5px 10px;
-            font-size: 12px;
-          }
+        @include mobile {
+          font-size: 12px;
+          text-align: center;
         }
       }
     }

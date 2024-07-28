@@ -1,7 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 
-const TogButton = ({ setOpen }) => {
+const ToggleButton = ({ setOpen }) => {
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
@@ -20,8 +19,8 @@ const TogButton = ({ setOpen }) => {
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
-            open: { opacity: 0 },
             closed: { opacity: 1 },
+            open: { opacity: 0 },
           }}
         />
         <motion.path
@@ -38,4 +37,4 @@ const TogButton = ({ setOpen }) => {
   );
 };
 
-export default TogButton;
+export default ToggleButton;

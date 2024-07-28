@@ -3,7 +3,7 @@ import Contact from "./Components/Contact/Contact";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Parallax from "./Components/Parallax/Parallax";
-import Portfolio from "./Components/Portfolio/Portfolio";
+import Portfolio from "./Components/portfolio/Portfolio";
 import Skills from "./Components/Skills/Skills";
 
 const App = () => {
