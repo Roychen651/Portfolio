@@ -25,4 +25,8 @@ section{
     scroll-snap-align: center;
 }
 
-
+@mixin mobile {
+    @media (max-width: 738px){
+        @content;
+    }
+}

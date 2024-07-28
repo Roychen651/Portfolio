@@ -1,6 +1,6 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./Skills.scss";
-import { motion, useInView } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 const variants = {
   initial: {
@@ -21,15 +21,42 @@ const variants = {
 
 const Skills = () => {
   const ref = useRef();
-  const isInView = useInView(ref, { margin: "-100px" });
+  const controls = useAnimation();
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          controls.start("animate");
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [controls]);
+
+  const handlePortfolioClick = () => {
+    document.getElementById("Portfolio").scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <motion.div
       className="skills"
-      variants={variants}
-      initial="initial"
       ref={ref}
-      animate={isInView ? "animate" : "initial"}
+      initial="initial"
+      animate={controls}
+      variants={variants}
     >
       <motion.div className="text-container" variants={variants}>
         <p>
@@ -52,6 +79,7 @@ const Skills = () => {
             <motion.b whileHover={{ color: "orange" }}>By</motion.b> Me
           </h1>
           <motion.button
+            onClick={handlePortfolioClick}
             whileHover={{
               scale: 1.1,
               backgroundColor: "#ffcc00",
