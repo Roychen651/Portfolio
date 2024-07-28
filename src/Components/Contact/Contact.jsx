@@ -48,8 +48,8 @@ const Contact = () => {
         <motion.div
           className="phone-svg"
           initial={{ opacity: 1 }}
-          whileInView={{ opacity: 0 }}
-          transition={{ duration: 3 }}
+          animate={{ opacity: 0 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -77,7 +77,7 @@ const Contact = () => {
         </motion.div>
         <motion.form
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
           <input type="text" required placeholder="Name" />
