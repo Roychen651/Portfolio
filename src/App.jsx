@@ -1,10 +1,10 @@
 import "./app.scss";
+import Contact from "./Components/Contact/Contact";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Parallax from "./Components/Parallax/Parallax";
 import Portfolio from "./Components/portfolio/Portfolio";
 import Skills from "./Components/Skills/Skills";
-import Test from "./Test";
 
 const App = () => {
   return (
@@ -23,9 +23,7 @@ const App = () => {
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="Contact">Contact</section>
-
-      <Test />
+      <section id="Contact"><Contact/></section>
     </div>
   );
 };
