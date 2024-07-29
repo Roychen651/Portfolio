@@ -34,7 +34,7 @@ const items = [
   {
     id: 5,
     title: "Text Analysis - Machine Learning Project",
-    img: "https://github.com/Roychen651/moveEase/blob/main/moveEase.png?raw=true",
+    img: "https://cdn-icons-png.flaticon.com/512/2980/2980560.png",
     desc: "This project focuses on predicting the gender of the author based on textual content. The task involves training machine learning models to classify whether a given text is written by a male or female author. The primary metric used to evaluate the model's performance is the F1-score, taking into account both precision and recall.",
     github: "https://github.com/Roychen651/Text-Anylsis-ML",
   },

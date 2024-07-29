@@ -102,6 +102,8 @@
           width: 200px;
           cursor: pointer;
           z-index: 1;
+          text-decoration: none;
+          
 
           @include mobile {
             width: 150px;
@@ -109,10 +111,7 @@
           }
 
           
-          a {
-            color: inherit; 
-            text-decoration: none; 
-          }
+         
         }
       }
     }
