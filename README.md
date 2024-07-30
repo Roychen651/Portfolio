@@ -2,7 +2,6 @@
 
 Welcome to my portfolio website! This site showcases my projects and skills as a web and mobile app developer.
 
-![Hero Image](./assets/hero.png)
 
 ## 🌟 About This Website
 
