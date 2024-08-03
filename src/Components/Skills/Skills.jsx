@@ -62,7 +62,7 @@ const Skills = () => {
       <motion.div className="listContainer" variants={variants}>
         <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
           <h2>Frontend</h2>
-          <p>React JS, React Native, HTML, CSS, SCSS, Java Script, Bootstrap, Motion Framer.</p>
+          <p>React JS, React Native, HTML, CSS, SCSS, Java Script, Bootstrap,TailwindCSS, Motion Framer, Vite.</p>
         </motion.div>
         <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
           <h2>Backend</h2>

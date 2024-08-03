@@ -40,54 +40,69 @@ const items = [
   },
   {
     id: 6,
+    title: "Weather API App",
+    img: "https://www.drawhipo.com/wp-content/uploads/2023/04/Weather-Color-1-Cloudy.png",
+    desc: "This application provides real-time weather updates for any city around the world. Built with React and styled for a beautiful and responsive design, it fetches weather data from the OpenWeatherMap API.",
+    github: "https://github.com/Roychen651/Weather-React-API",
+  },
+  {
+    id: 7,
+    title: "Shoey Shop",
+    img: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8a8d6f147600267.62c57f3eafb72.png",
+    desc: "Welcome to Shoey Shop! This is an online store where you can browse and purchase the latest and most popular shoes. The website is designed with a modern and responsive layout, ensuring a great user experience across all devices.",
+    github: "https://github.com/Roychen651/Nike-TailwindCSS-Site",
+  },
+  {
+    id: 8,
     title: "Recipe App Android",
     img: "https://raw.githubusercontent.com/Roychen651/Recipes-Android-App/main/Pictures/logo%20.png",
     desc: "The main objectives of this system are: Efficient Recipe Management: Easily search and find your stored recipes by categories or ingredients. Ingredient-Based Recipe Search: Find recipes that match the ingredients you have available in your kitchen.",
     github: "https://github.com/Roychen651/Recipes-Android-App",
   },
   {
-    id: 7,
+    id: 9,
     title: "Text Analysis - Machine Learning Project",
     img: "https://cdn-icons-png.flaticon.com/512/2980/2980560.png",
     desc: "This project focuses on predicting the gender of the author based on textual content. The task involves training machine learning models to classify whether a given text is written by a male or female author. The primary metric used to evaluate the model's performance is the F1-score, taking into account both precision and recall.",
     github: "https://github.com/Roychen651/Text-Anylsis-ML",
   },
   {
-    id: 8,
+    id: 10,
     title: "Real Estate - Data Science Project",
     img: "https://github.com/Roychen651/DB-Project---Real-Eastate-Investment-Portugal/blob/main/canvas.png?raw=true",
     desc: "The goal of this project is to use classification models to identify properties that are good for investment.",
     github: "https://github.com/Roychen651/DB-Project---Real-Eastate-Investment-Portugal",
   },
   {
-    id: 9,
+    id: 11,
     title: "Reverse engineering and malware",
     img: "https://i0.wp.com/www.intelecis.com/wp-content/blogs.dir/743/files/2023/01/Zeus-Malware-f.png?fit=1920%2C800&ssl=1",
     desc: "The goal of the project is an investigation of the Zeus malware and its analysis.",
     github: "https://drive.google.com/drive/folders/1nLHIfwKFh2vE1puV_dn0j9jJcV8WIl-X",
   },
   {
-    id: 10,
+    id: 12,
     title: "The Three Holy Funds Website",
     img: "https://github.com/Roychen651/The-Three-Holy-Funds-Balance-Calculator/blob/main/funds.png?raw=true",
     desc: "The Three Holy Funds Balance Calculator, This tool helps you balance your investment funds to meet your target allocations.",
     github: "https://github.com/Roychen651/The-Three-Holy-Funds-Balance-Calculator",
   },
   {
-    id: 11,
+    id: 13,
     title: "Cost - Web Frontend Application",
     img: "https://github.com/Roychen651/Cost-WebApplication-Frontend-Project/blob/main/Cost.png?raw=true",
     desc: "This web application provides a user-friendly interface to add costs under different categories and view reports for better expense tracking. It utilizes IndexedDB for client-side storage, allowing for seamless data management even when offline.",
     github: "https://github.com/Roychen651/Cost-WebApplication-Frontend-Project",
   },
   {
-    id: 12,
+    id: 14,
     title: "moveEase",
     img: "https://github.com/Roychen651/moveEase/blob/main/moveEase.png?raw=true",
     desc: "The goal of this project is to make a Prd file to a business of online movie tickets selling.",
     github: "https://github.com/Roychen651/moveEase",
   },
 ];
+
 
 
 const Single = ({ item }) => {
