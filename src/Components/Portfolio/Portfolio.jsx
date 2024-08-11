@@ -33,10 +33,10 @@ const items = [
   },
   {
     id: 5,
-    title: "Pokemon API",
-    img: "https://static.vecteezy.com/system/resources/previews/027/127/571/non_2x/pokemon-logo-pokemon-icon-transparent-free-png.png",
-    desc: "This project is a React application that fetches and displays information about various Pokémon using the PokeAPI.",
-    github: "https://github.com/Roychen651/PokemonAPI",
+    title: "Softwalien",
+    img: "https://github.com/Roychen651/Softwalien-Landing-Page/blob/main/public/logo.png?raw=true",
+    desc: "Softwalien is a modern, responsive landing page designed to showcase the features and services of a fictional web development company. The project includes dynamic sections, smooth animations, and a user-friendly interface built with React and TailwindCSS.",
+    github: "https://github.com/Roychen651/Softwalien-Landing-Page",
   },
   {
     id: 6,
