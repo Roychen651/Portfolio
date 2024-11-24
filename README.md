@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website! This site showcases my projects and skills as a web and mobile app developer.
 
-[Visit My Portfolio Website](https://roy-chen.netlify.app)
+[Visit My Portfolio Website](https://roychen-portfolio.netlify.app/)
 
 ## 🌟 About This Website
 
@@ -14,7 +14,7 @@ This portfolio website is built using the following technologies:
 
 - **Frontend:**
   - React.js
-  - SCSS
+  - Tailwind CSS
   - Framer Motion for animations
 
 - **Deployment:**
